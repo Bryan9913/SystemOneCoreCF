@@ -12,9 +12,11 @@ namespace SystemOneCoreCF.Models
 
         [Required]
         [StringLength(50, MinimumLength = 3, ErrorMessage ="El nombre que ha ingresado no debe ser mayor a 50 ni menor a 3 caracteres")]
+        [Display(Name = "Nombre")]
         public string Nombre { get; set; }
 
         [StringLength(255, ErrorMessage = "El nombre que ha ingresado no debe ser mayor a 255 caracteres")]
+        [Display(Name = "Descripción")]
         public string Descripcion { get; set; }
         public bool? Estado { get; set; }
 
